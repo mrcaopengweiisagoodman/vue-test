@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
+    <RouteCom></RouteCom>
   </div>
 </template>
 
 <script>
+import RouteCom from './components/routerLinkCom';
 export default {
-  name: 'App'
+  name: 'App',
+  components: { RouteCom }
 }
 </script>
 
