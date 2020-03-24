@@ -113,13 +113,14 @@ export default {
   watch: {
 
   },
+	
   mounted() {
 
   },
   methods: {
     handleSubmit: function (vals) {
       const {
-        form: { validateFields }
+        form: { validateFields , setFieldsValue }
       } = this
       const _this = this
      /* // 拿取key为name的值
